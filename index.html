@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Day Diary</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            position: relative; 
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto; 
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('act.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            opacity: 0.5; 
+            z-index: -1; 
+        }
+
+       
+        nav {
+            width: 100%;
+            background-color: #4a90e2;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1; 
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        
+        .container {
+            max-width: 800px;
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.7); 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            position: relative; 
+            z-index: 1; 
+        }
+
+        
+        h1 {
+            font-size: 2.5em;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+    
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="container" id="home">
+        <h1>Welcome to College Day Diary 2024!</h1>
+        <p>
+            College Day 2024 was a vibrant celebration that brought together our entire campus community—students, faculty, staff, alumni, and friends—to honor the spirit, achievements, and diversity of our institution. It was a time to reflect on our proud heritage, showcase the talents and ambitions of our students, and embrace the future with enthusiasm.
+
+From captivating performances and engaging workshops to thought-provoking lectures and exciting competitions, this year’s College Day featured an unforgettable lineup of activities that highlighted the passion, creativity, and camaraderie that define our college.
+
+We made lasting memories, strengthened bonds, and celebrated our journey together. College Day 2024 will always be remembered as one of our best yet! </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Day Diary - Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            position: relative;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('act.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #4a90e2;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        .container {
+            max-width: 1000px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        .days {
+            display: flex;
+            gap: 20px;
+        }
+
+        .day {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .content p {
+            margin: 5px 0;
+        }
+
+        .placeholder img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #ccc;
+        }
+
+        @media (max-width: 900px) {
+            .days {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>College Day 2024 Timeline</h2>
+
+        <div class="days">
+            <div class="day">
+                <h3>Opening Day - September 19, 2024</h3>
+                <p>8:00 AM Opening Program</p>
+                <div class="placeholder"><img id="photo1" src="IMG_6405.jpg" alt="Photo 1"></div>
+                <p>10:00 AM - Dance Presentation</p>
+                <div class="placeholder"><img id="photo2" src="IMG_2210.jpg" alt="Photo 2"></div>
+                <p>1:00 PM - Gym Event</p>
+                <div class="placeholder"><img id="photo3" src="IMG_6396.jpg" alt="Photo 3"></div>
+                <p>5:00 PM - Gym Event</p>
+                <div class="placeholder"><img id="photo7" src="IMG_6564.jpg" alt="Photo 7"></div>
+            </div>
+            <div class="day">
+                <h3>Awarding Day - September 27, 2024</h3>
+                <p>8:00 AM</p>
+                <div class="placeholder"><img id="photo4" src="IMG_6390.jpg" alt="Photo 4"></div>
+                <p>10:00 AM</p>
+                <div class="placeholder"><img id="photo5" src="IMG_6551.jpg" alt="Photo 5"></div>
+                <p>1:00 PM - BINGO</p>
+                <div class="placeholder"><img id="photo6" src="IMG_6545.jpg" alt="Photo 6"></div>
+                <p>5:00 PM - Gym Event</p>
+                <div class="placeholder"><img id="photo8" src="IMG_6562.jpg" alt="Photo 8"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
